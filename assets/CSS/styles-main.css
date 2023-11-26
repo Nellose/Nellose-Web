@@ -1,0 +1,57 @@
+/* By Nellose [https://github.com/Nellose] */
+
+body {
+  background-color: #151719;
+  animation-name: example;
+  color: #ffffff;
+  font-family: 'Kanit', sans-serif;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+body {
+  overflow: hidden;
+}
+
+@keyframes example {
+  0%   {background-color: #151719;}
+  50%  {background-color: #151715;}
+  100% {background-color: #151719;}
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.text {
+  text-align: center;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #ffffff; 
+  color: #151719;
+}
+
+
+/* By Nellose [https://github.com/Nellose] */

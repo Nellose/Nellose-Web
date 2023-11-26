@@ -1,0 +1,99 @@
+/* By Nellose [https://github.com/Nellose] */
+
+body {
+    background-color: #151719;
+	animation-name: example;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+@keyframes example {
+  0%   {background-color: #151719;}
+  50%  {background-color: #151715;}
+  100% {background-color: #151719;}
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.neon-button {
+    background-color: #151719;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.neon-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.neon-button:hover::before {
+    width: 110%;
+    height: 110%;
+}
+
+.neon-button:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.neon-button:active {
+    transform: scale(0.9);
+}
+
+    .back-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 32px;
+      height: 32px;
+      background-image: url('./OTHER/ico.png');
+      background-size: cover;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+
+/* By Nellose [https://github.com/Nellose] */
